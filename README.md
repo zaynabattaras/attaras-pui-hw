@@ -1,5 +1,5 @@
 # PUI homework
 
-Deployed website: `add the URL to your deployed website`
+Deployed website: `https://zaynabattaras.github.io/attaras-pui-hw/solution-hw0`
 
 Repository link: `add the URL to this repository`
