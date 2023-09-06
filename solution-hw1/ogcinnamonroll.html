@@ -2,19 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Product Detail</title>
   </head>
 
   <body>
+    <header> 
     <img src = "../assets/logo/logo-01.svg"
-      width = "200"
+      class = logo
       alt = "bun bun logo" />
     <hr>
     <h1> Products</h1>
-    <h1> Cart</h1>
-    <h1> Original cinnamon roll</h1>
+    <h2> Cart</h2>
+  </header>
+
+    <main> 
+    <h2> Original cinnamon roll</h2>
     <img src = "../assets/products/original-cinnamon-roll.jpg"
-      width="300"
+      class = pd
       alt = "Original cinnamon roll" />
+    <p >
+       Customize our hand-made cinnamon rolls to your likeing!
+
+    </p>
+
+    <p><label for="glazing-select">Glazing:</label></p>
+
+    <select name="glazing" id="glazing-select">
+      <option value="">--Please choose an option--</option>
+      <option value="Keep original">Keep original</option>
+      <option value="Sugar milk">Sugar milk</option>
+      <option value="Vanilla milk">Vanilla milk</option>
+      <option value="Double chocolate">Double chocolate</option>
+    </select>
+
+    <p><label for="packing-select">Packing:</label></p>
+    <select name="packing" id="packing-select">
+      <option value="">--Please choose an option--</option>
+      <option value="1">1</option>
+      <option value="3">3</option>
+      <option value="6">6</option>
+      <option value="12">12</option>
+    </select>
+    
+  <h3> $2.49</h3>
+  <button class="Add to Cart">
+      Add to Cart
+  </button>
+    
+  </main>
   <body>
-</html>
+</html> 

@@ -1,3 +1,6 @@
+.header{
+    margin: 20px
+}
 hr {
     /*https://www.w3schools.com/howto/howto_css_style_hr.asp*/
     border-top:2px solid black;
@@ -25,10 +28,19 @@ h3 {
  }
  a{
     font-size:30px;
+    font-family: courier;
+ }
+
+ p{
+    font-size: 25px;
+    font-family: courier;
+    width: 400px;
+    text-align: center;
  }
 
  img.logo{
     width: 400 px;
+    height: 300px;
    
  }
  img.roll {
@@ -36,6 +48,14 @@ h3 {
   width: 400 px;
   height: 400px;
 
+ }
+ img.pd {
+    border: 2px solid black;
+    width: 600 px;
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
  }
 
 /*img.roll:hover {
@@ -53,7 +73,8 @@ h3 {
     align-items: center ;
 }
 .products div {
-    max-width:100%;
+    width:400px;
+    padding:5px;
     align-self: center;
 
 }
@@ -63,6 +84,5 @@ h3 {
     border: 5px solid yellow;
     /*https://www.geeksforgeeks.org/how-to-shift-inline-elements-when-text-bold-on-hover-using-css/*/
     font-weight: bold;
-
 
 }
