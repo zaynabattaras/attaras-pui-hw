@@ -114,3 +114,19 @@ a.products{
     font-weight: bolder;
 
 }
+button{
+    background-color:yellow;
+    border: 2px solid black;
+    font-size: 20px;
+}
+.detail-b {
+    width:250px;
+    font-size: 15px;
+    font-weight: bolder;
+    text-decoration: none;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 500px;
+
+
+}
