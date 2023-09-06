@@ -10,11 +10,14 @@
     <header>
       <a href = index.html> 
       <img src = "../assets/logo/logo-01.svg"
+      width="400px"
       class = logo
       alt = "bun bun logo" />
       </a>
       <hr>
-      <a href = index.html> <h1> Products</h1> </a>
+      <div class = "page">
+      <a href = index.html> <h1>Products</h1></a>
+      </div>
       <a href = "shoppingcart.html"><h2> Cart</h2></a>
     </header>
 
@@ -23,12 +26,13 @@
     <img src = "../assets/products/original-cinnamon-roll.jpg"
       class = pd
       alt = "Original cinnamon roll" />
-    <p >
+    <div class = details>
+    <p class = details>
        Customize our hand-made cinnamon rolls to your likeing!
 
     </p>
 
-    <p><label for="glazing-select">Glazing:</label></p>
+    <p class = details><label for="glazing-select">Glazing:</label></p>
 
     <select name="glazing" id="glazing-select">
       <option value="">--Please choose an option--</option>
@@ -38,7 +42,7 @@
       <option value="Double chocolate">Double chocolate</option>
     </select>
 
-    <p><label for="packing-select">Packing:</label></p>
+    <p class = details><label for="packing-select">Packing:</label></p>
     <select name="packing" id="packing-select">
       <option value="">--Please choose an option--</option>
       <option value="1">1</option>
@@ -46,7 +50,7 @@
       <option value="6">6</option>
       <option value="12">12</option>
     </select>
-
+  </div>
   <h3> $2.49</h3>
   <button class="Add to Cart">
       Add to Cart
