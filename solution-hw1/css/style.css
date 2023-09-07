@@ -30,6 +30,14 @@ h3 {
     text-align:start;
 
  }
+h4{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
  .page{
     font-weight: 900px;
     background-color: yellow;
@@ -84,6 +92,14 @@ a.products{
     margin-left: auto;
     margin-right: auto;
  }
+ img.sc{
+    border: 2px solid black;
+    width: 200 px;
+    height: 200 px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
 
 /*img.roll:hover {
     background: yellow;
@@ -129,4 +145,32 @@ button{
     padding-bottom: 500px;
 
 
+}
+/*nnnnn*/
+.final-details{
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    width:300px;
+    text-decoration: none;
+    margin: auto;
+}
+
+
+hr.scl{
+    border-top:4px solid black;
+    width:1000px;
+    padding-bottom: 15px;
+}
+.checkout{
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    width:150px;
+    text-decoration: none;
+    margin: auto;
+    font-weight: bold;
+}
+.pad{
+    padding-bottom: 500px;
 }
