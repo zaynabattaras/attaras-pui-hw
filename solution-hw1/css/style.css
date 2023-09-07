@@ -39,7 +39,7 @@ h4{
 
 
  .page{
-    font-weight: 900px;
+    font-weight: bold;
     background-color: yellow;
     width:300px;
     margin:auto;
@@ -74,19 +74,19 @@ a.products{
  }
 
  img.logo{
-    width: 400 px;
+    width: 400px;
     /*height: 300px;*/
    
  }
  img.roll {
   border: 2px solid black;
-  width: 400 px;
+  width: 400px;
   height: 400px;
 
  }
  img.pd {
     border: 2px solid black;
-    width: 600 px;
+    width: 600px;
     height: 600px;
     display: block;
     margin-left: auto;
@@ -94,8 +94,8 @@ a.products{
  }
  img.sc{
     border: 2px solid black;
-    width: 200 px;
-    height: 200 px;
+    width: 200px;
+    height: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
