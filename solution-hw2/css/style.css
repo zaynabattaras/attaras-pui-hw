@@ -28,6 +28,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    width: 800px;
 
 }
 .Header-R1-C1-5{
