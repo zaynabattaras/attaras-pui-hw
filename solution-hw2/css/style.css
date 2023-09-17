@@ -4,51 +4,80 @@ body {
 }
 /*creating dimensions for header and adding padding for space between it and other elements*/
 header{
+    width: 1200px;
     margin: 20px;
-    padding-bottom: 100px;
 }
- /*.Header{
+/*creating header to be a flex boc*/
+.Header{
     width: 1200px;
     display: flex;
     flex-direction: row;
- }*/
- .Header-R1{
-    width: 1200px;
+}
+/*setting dimensions for column1 of header*/
+.Header-C1{
+    width: 400px;
+
+}
+/*setting dimensions for column1 row 1 of header*/
+.Header-R1-C1{
+    width: 400px;
+
+}
+/*creating  column two as another flex box nested in header flex box*/
+.Header-C2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.Header-R1-C1-5{
+    /*padding-right: 300px;
+    width: 300px;*/
+}
+.Header-R2-C2{
+    /*border-top:10px solid black;
+    transform: rotate(90deg);*/
+
+}
+/*Creating row 1 column 2 as a flexbox within column2's flex box*/
+.Header-R1-C2{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
- }
- .Header-R1-C1{
-    /*padding-right: 400px;*/
- }
- .Header-R1-C1-5{
-    padding-right: 300px;
- }
- .Header-R1-C2{
-    align-content: flex-end;
-    padding-right: 50px;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+/*creating space between the next element*/
+.Header-R1-C2-5{
+    padding-right: 75px;
+}
+/*creating space between the next element*/
 
- }
- .Header-R1-C3{
-    align-content: flex-end;
-
- }
- .Header-R3-C1{
-    /*width:500px;*/
-
- }
+.Header-R1-C2-75{
+    padding-right: 75px;
+}
 /*adding default hr styling*/
 hr {
     /*https://www.w3schools.com/howto/howto_css_style_hr.asp*/
-    border-top:2px solid black;
+    border-top:5px solid black;
+
     
 }
 /*defining h1 font size and placement*/
 h1{
-    font-size: 48px;
+    font-size: 35px;
     /*https://www.w3.org/Style/Examples/007/center.en.html*/
     text-align: center;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+}
+
+h5{
+    font-size: 35px;
+    /*https://www.w3.org/Style/Examples/007/center.en.html*/
+    text-align: center;
+    font-weight: normal;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
 }
 /*defining h2 font size and placement and weight*/
 h2{
@@ -78,8 +107,7 @@ h4{
  .page{
     font-weight: bold;
     background-color: yellow;
-    width:300px;
-    margin:auto;
+    font-weight: bold;
     
  }
 /*styling for product details page text*/
