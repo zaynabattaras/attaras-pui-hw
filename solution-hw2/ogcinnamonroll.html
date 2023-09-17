@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Product Detail</title>
+  </head>
+
+  <body>
+    <!--breaking up the page into header and main so I can create a standard header across all pages-->
+    <header>
+      <!--load logo and link it to product page-->
+      <a href = index.html> 
+      <img src = "../assets/logo/logo-01.svg"
+      width=400
+      class = logo
+      alt = "bun bun logo" />
+      </a>
+      <!--use hr block to make theme change line-->
+      <hr>
+      <!--create this div so I can indicate what page they are on-->
+      <div class = "page">
+      <a href = index.html> <h1>Products</h1></a>
+      </div>
+      <a href = "shoppingcart.html"><h2> Cart</h2></a>
+    </header>
+
+    <main> 
+    <h2> Original cinnamon roll</h2>
+    <img src = "../assets/products/original-cinnamon-roll.jpg"
+      width = "600"
+      class = pd
+      alt = "Original cinnamon roll" />
+    <!--grouping text and dropdown menus to add padding between price and add to cart-->
+    <div class = details>
+    
+    <p class = details>
+       Customize our hand-made cinnamon rolls to your likeing!
+
+    </p>
+    <!--adding drop down menu for glazing-->
+    <p class = details><label for="glazing-select">Glazing:</label></p>
+
+    <select name="glazing" id="glazing-select">
+      <option value="">--Please choose an option--</option>
+      <option value="Keep original">Keep original</option>
+      <option value="Sugar milk">Sugar milk</option>
+      <option value="Vanilla milk">Vanilla milk</option>
+      <option value="Double chocolate">Double chocolate</option>
+    </select>
+    <!--adding drop down menu for pack size-->
+    <p class = details><label for="packing-select">Pack size:</label></p>
+    <select name="packing" id="packing-select">
+      <option value="">--Please choose an option--</option>
+      <option value="1">1</option>
+      <option value="3">3</option>
+      <option value="6">6</option>
+      <option value="12">12</option>
+    </select>
+  </div>
+  <!-- creating pargraph to get price and button on same line-->
+  <p class = detail-b>
+  $2.49
+  <!--adding button for add to cart-->
+  <button >
+      Add to Cart
+  </button>
+  </p>
+  </main>
+</body>
+</html> 

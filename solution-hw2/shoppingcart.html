@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Shopping Cart</title>
+  </head>
+
+  <body>
+    <!--breaking up the page into header and main so I can create a standard header across all pages-->
+    <header>
+      <!--load logo and link it to product page-->
+      <a href = index.html> 
+      <img src = "../assets/logo/logo-01.svg"
+      width=400
+      class = logo
+      alt = "bun bun logo" />
+      </a>
+      <!--use hr block to make theme change line-->
+      <hr>
+      <a href = index.html> <h2>Products</h2></a>
+      <!--create this div so I can indicate what page they are on-->
+      <div class = "page">
+      <a href = "shoppingcart.html"><h1> Cart</h1></a>
+    </div>
+    </header>
+
+    <main>
+      <h2> Shopping Cart</h2>
+      <!--using div block to seperate both cart entries-->
+      <div> 
+        <img src = "../assets/products/original-cinnamon-roll.jpg"
+        width=200
+        class = sc
+        alt = "original cinnamon roll"/>
+        <h4> Remove</h4>
+       <!-- using p block to write text and using br to seperate each element on its own line-->
+        <p class = final-details>
+         Original Cinnamon Roll
+        <br>
+        Glazing: Keep original
+        <br>
+        Pack Size: 1
+        </p>
+        <br>
+        <h3 class = final-details> $2.49</h3>
+        <br>
+        <br>
+
+    </div>
+    <!--using div block to seperate both cart entries-->
+    <div> 
+        <img src = "../assets/products/original-cinnamon-roll.jpg"
+        width=200
+        class = sc
+        alt = "original cinnamon roll"/>
+        <h4> Remove</h4>
+        <!-- using p block to write text and using br to seperate each element on its own line-->
+        <p class = final-details> 
+        Double Chocolate Cinnamon Roll
+        <br>
+        Glazing: Sugar Milk
+        <br>
+        Pack Size: 6
+        </p>
+        <br>
+        <h3 class = final-details> $27.45</h3>
+        <br>
+        <br>
+
+    </div>
+    <!--using hr tag to make a theme change between items and total-->
+    <hr class = scl>
+    <!--use br tag to seperate hr from total-->
+    <br>
+    <!-- wrapping both button and total in a div block to add padding to the bottom of the website-->
+    <div class = pad>
+      <p class = final-details>Total: $29.94</p>
+      <!--creating a button for checkout-->
+      <button class="checkout">
+        Checkout
+    </button>
+    </div>
+    </main>
+  </body>
+</html> 

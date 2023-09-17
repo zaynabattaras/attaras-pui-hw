@@ -1,0 +1,218 @@
+/*creating standard font throughout website */
+body {
+    font-family:  Arial, Helvetica, sans-serif;
+}
+/*creating dimensions for header and adding padding for space between it and other elements*/
+header{
+    margin: 20px;
+    padding-bottom: 100px;
+}
+ /*.Header{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+ }*/
+ .Header-R1{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+ }
+ .Header-R1-C1{
+    /*padding-right: 400px;*/
+ }
+ .Header-R1-C1-5{
+    padding-right: 300px;
+ }
+ .Header-R1-C2{
+    align-content: flex-end;
+    padding-right: 50px;
+
+ }
+ .Header-R1-C3{
+    align-content: flex-end;
+
+ }
+ .Header-R3-C1{
+    /*width:500px;*/
+
+ }
+/*adding default hr styling*/
+hr {
+    /*https://www.w3schools.com/howto/howto_css_style_hr.asp*/
+    border-top:2px solid black;
+    
+}
+/*defining h1 font size and placement*/
+h1{
+    font-size: 48px;
+    /*https://www.w3.org/Style/Examples/007/center.en.html*/
+    text-align: center;
+}
+/*defining h2 font size and placement and weight*/
+h2{
+    font-size: 48px;
+    /*https://www.w3.org/Style/Examples/007/center.en.html*/
+    text-align: center;
+    /*https://www.sitepoint.com/community/t/how-do-you-unbold-headers/1684/2*/
+    font-weight: normal;
+}
+/*defining h3 font size and placement and weight*/
+h3 {
+    font-size: 30px;
+    /*https://www.sitepoint.com/community/t/how-do-you-unbold-headers/1684/2*/
+    font-weight: normal;
+    text-align:start;
+
+ }
+/*defining h4 font size and placement and weight*/
+h4{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/*making page you are on's navigation button yellow and bold*/
+ .page{
+    font-weight: bold;
+    background-color: yellow;
+    width:300px;
+    margin:auto;
+    
+ }
+/*styling for product details page text*/
+ .details {
+    width:400px;
+    margin:auto;
+    display:block;
+    font-size: 20px;
+    width: 250px;
+    text-decoration:none;
+    padding-top: 10px;
+    padding-bottom: 20px;
+ }
+ /*standardizing links font and color and not underline them*/
+ a{
+    font-size:25px;
+    text-decoration: none;
+    color:black
+ }
+ /* creating an exception for the links with this class be underlined*/
+a.products{
+    text-decoration: underline;
+}
+/*standardizing pargraph font, width, placement*/
+ p{
+    font-size: 30px;
+    width: 400px;
+    text-align: start;
+    text-decoration: underline;
+ }
+/*setting width for logo image*/
+ img.logo{
+    width: 400px;
+    padding-right: 400px;
+   
+ }
+ /*setting size for all product images in product gallery and adding border*/
+ img.roll {
+  border: 2px solid black;
+  width: 400px;
+  height: 400px;
+
+ }
+  /*setting size for  product image in product details and adding border and setting placement*/
+ img.pd {
+    border: 2px solid black;
+    width: 600px;
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+/*setting size for  product image in shopping cart and adding border and setting placement*/
+ img.sc{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ /*creating dimensions and placement for flex parent in product gallery*/
+ .products {
+    width:100%;
+    height:90%;
+    display: flex;
+    /*https://stackoverflow.com/questions/46986859/how-can-i-put-elements-underneath-each-other-in-flex-display*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+ /*creating dimensions and placement for flex child in product gallery*/
+.products div {
+    width:400px;
+    padding:5px;
+    text-align: start;
+
+
+}
+/*creating hover background, cursor, border, font weight standards for flex child in product gallery*/
+.products div:hover{
+    background: yellow;
+    cursor: pointer;
+    border: 5px solid yellow;
+    /*https://www.geeksforgeeks.org/how-to-shift-inline-elements-when-text-bold-on-hover-using-css/*/
+    font-weight: bolder;
+
+}
+/*creating background, border, font size standards for all buttons*/
+button{
+    background-color:yellow;
+    border: 2px solid black;
+    font-size: 20px;
+}
+/*creating dimensions, width, font size, placement for add to cart and price in product details*/
+.detail-b {
+    width:250px;
+    font-size: 15px;
+    font-weight: bolder;
+    text-decoration: none;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 500px;
+
+
+}
+/*creating dimensions, width, font size, placement for all product details in shopping cart*/
+.final-details{
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    width:300px;
+    text-decoration: none;
+    margin: auto;
+}
+
+/*creating specific style for hr to be not as wide right before the total and checkout button*/
+hr.scl{
+    border-top:4px solid black;
+    width:1000px;
+}
+/*adjusting button style to match  appropriate style of checkout button*/ 
+.checkout{
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    width:150px;
+    text-decoration: none;
+    margin: auto;
+    font-weight: bold;
+}
+/*created to add padding between elements*/
+.pad{
+    padding-bottom: 500px;
+}
