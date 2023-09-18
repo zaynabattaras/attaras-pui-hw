@@ -3,28 +3,28 @@ body {
     font-family:  Arial, Helvetica, sans-serif;
 }
 /*creating dimensions for header and adding padding for space between it and other elements*/
-header{
+header, main{
     width: 1200px;
     margin: 50px;
 }
-/*creating header to be a flex boc*/
-.Header{
+/*creating header to be a flex box*/
+.headerC{
     width: 1200px;
     display: flex;
     flex-direction: row;
 }
 /*setting dimensions for column1 of header*/
-.Header-C1{
+.header-C1{
     width: 400px;
 
 }
 /*setting dimensions for column1 row 1 of header*/
-.Header-R1-C1{
+.header-R1-C1{
     width: 400px;
 
 }
 /*creating  column two as another flex box nested in header flex box*/
-.Header-C2{
+.header-C2{
     display: flex;
     flex-direction: column;
     width: 800px;
@@ -32,19 +32,19 @@ header{
 
 }
 /*Creating row 1 column 2 as a flexbox within column2's flex box*/
-.Header-R1-C2{
+.header-R1-C2{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-end;
 }
 /*creating space between the next element*/
-.Header-R1-C2-5{
+.header-R1-C2-5{
     padding-right: 75px;
 }
 /*creating space between the next element*/
 
-.Header-R1-C2-75{
+.header-R1-C2-75{
     padding-right: 75px;
 }
 
@@ -116,6 +116,7 @@ h4{
     padding-top: 30px;
     padding-bottom: 75px;
  }
+ /* creating dimensions for detail page flex parent*/
  .detail-parent{
     display:flex;
     flex-direction:row;
@@ -123,10 +124,12 @@ h4{
     align-items: flex-start;
     padding-bottom: 75px;
  }
+ /*adding paddin under column 1*/
  .detail-column1{
     padding-right: 75px;
 
  }
+ /*adding special style for pargraphs in the detail page*/
  .detail-p{
     text-decoration: none;
     margin: 0px;
@@ -188,7 +191,7 @@ a.products{
     /*https://stackoverflow.com/questions/46986859/how-can-i-put-elements-underneath-each-other-in-flex-display*/
     flex-direction: row;
     align-items: flex-start ;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: flex-start ;
 
     
@@ -241,14 +244,81 @@ button{
 
 
 }
+/*creating dimension for container 1, and making it flex style*/
+.sc-container1{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+   
+}
+/*adding padding to the right of the pictures in the shopping cart */
+.sc-container1-cols{
+    padding-right: 20px;
+}
+/*adding text style and dimensions for descriptions in shopping cart*/
+.sc-container1-col2-rows{
+    text-align:justify;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    width: 400px;
+
+}
+/*adding text stule and dimensions for prices in shopping cart*/
+.sc-container1-col3-rows{
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: end;
+    width: 100px;
+    padding-top: 76px;
+    padding-bottom: 150px;
+}
+/*dimensions for containr 2 and making it into flex grid*/
+.sc-container2{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-bottom: 20px;
+}
+/*dimensions for container 2, col 1, to create horizontal space*/
+.sc-container2-col1-space{
+    width: 400px;
+}
+/*dimensions for container 2, col 2*/
+.sc-container2-col2{
+    width: 800px;
+}
+/* making container 3 into flex grid*/
+.sc-container3{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+/*creating dimensions for container 3 col 1*/
+.sc-container3-col1{
+    width: 350px;
+}
+/*creating space between container 3 and end of page*/
+.sc-container3-col2{
+    padding-right: 60px;
+}
+/*creating dimesnions and text stype for container 3 col 2, row 2*/
+.sc-container3-col2-row2{
+    width:150px;
+    text-align: end;
+    padding-bottom: 50px;
+    margin-right: 0px;
+}
 /*creating dimensions, width, font size, placement for all product details in shopping cart*/
 .final-details{
-    text-align: center;
     display: block;
     font-size: 27px;
-    width:300px;
     text-decoration: none;
     margin: auto;
+    margin-right: 0px;
+
 }
 
 /*creating specific style for hr to be not as wide right before the total and checkout button*/
@@ -261,12 +331,9 @@ hr.scl{
     text-align: center;
     display: block;
     font-size: 20px;
-    width:150px;
+    width:170px;
+    height: 40px;
     text-decoration: none;
     margin: auto;
     font-weight: bold;
-}
-/*created to add padding between elements*/
-.pad{
-    padding-bottom: 500px;
 }
