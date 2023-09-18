@@ -108,14 +108,32 @@ h4{
  }
 /*styling for product details page text*/
  .details {
-    width:400px;
     margin:auto;
     display:block;
     font-size: 20px;
-    width: 250px;
+    width: 350px;
     text-decoration:none;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 75px;
+ }
+ .detail-parent{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 75px;
+ }
+ .detail-column1{
+    padding-right: 75px;
+
+ }
+ .detail-p{
+    text-decoration: none;
+    margin: 0px;
+    font-size: 20px;
+    width: 350px;
+    padding-top: 20px;
+
  }
  /*standardizing links font and color and not underline them*/
  a{
@@ -165,7 +183,7 @@ a.products{
 
  /*creating dimensions and placement for flex parent in product gallery*/
  .products {
-    width:100%;
+    width:1200px;
     display: flex;
     /*https://stackoverflow.com/questions/46986859/how-can-i-put-elements-underneath-each-other-in-flex-display*/
     flex-direction: row;
@@ -175,6 +193,7 @@ a.products{
 
     
 }
+/*creating dimension and creating flex grid with in each column */
 .products-column{
     width: 285px;
     display: flex;
@@ -183,9 +202,11 @@ a.products{
     align-items: center;
 
 }
+/*creating an empty row with to create space between each product*/
 .space-row{
     padding-bottom: 25px;
 }
+/*setting dimensions and style for each product*/
 .products-column-child{
     width:285px;
     text-align: start;
@@ -207,16 +228,16 @@ button{
     background-color:yellow;
     border: 2px solid black;
     font-size: 20px;
+    font-weight: bold;
 }
 /*creating dimensions, width, font size, placement for add to cart and price in product details*/
 .detail-b {
-    width:250px;
-    font-size: 15px;
+    width:350px;
+    font-size: 20px;
     font-weight: bolder;
     text-decoration: none;
     margin: auto;
-    padding-top: 10px;
-    padding-bottom: 500px;
+    padding-top: 20px;
 
 
 }
@@ -224,7 +245,7 @@ button{
 .final-details{
     text-align: center;
     display: block;
-    font-size: 20px;
+    font-size: 27px;
     width:300px;
     text-decoration: none;
     margin: auto;

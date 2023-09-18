@@ -44,51 +44,70 @@
           <!--use hr block to make theme change line-->
           <hr >
         </div>
+        <!--column 2 row 3 of header-->
+        <div class = "page-title"> 
+          <h2> Original cinnamon roll</h2>
+        </div>
       </div>
     </div>
     </header>
 
     <main> 
-    <h2> Original cinnamon roll</h2>
-    <img src = "../assets/products/original-cinnamon-roll.jpg"
-      width = "600"
-      class = pd
-      alt = "Original cinnamon roll" />
-    <!--grouping text and dropdown menus to add padding between price and add to cart-->
-    <div class = details>
-    
-    <p class = details>
-       Customize our hand-made cinnamon rolls to your likeing!
-
-    </p>
-    <!--adding drop down menu for glazing-->
-    <p class = details><label for="glazing-select">Glazing:</label></p>
-
-    <select name="glazing" id="glazing-select">
-      <option value="">--Please choose an option--</option>
-      <option value="Keep original">Keep original</option>
-      <option value="Sugar milk">Sugar milk</option>
-      <option value="Vanilla milk">Vanilla milk</option>
-      <option value="Double chocolate">Double chocolate</option>
-    </select>
-    <!--adding drop down menu for pack size-->
-    <p class = details><label for="packing-select">Pack size:</label></p>
-    <select name="packing" id="packing-select">
-      <option value="">--Please choose an option--</option>
-      <option value="1">1</option>
-      <option value="3">3</option>
-      <option value="6">6</option>
-      <option value="12">12</option>
-    </select>
-  </div>
-  <!-- creating pargraph to get price and button on same line-->
-  <p class = detail-b>
-  $2.49
-  <!--adding button for add to cart-->
-  <button >
-      Add to Cart
-  </button>
-  </p>
+      <div class=" detail-parent">
+        <div class = "detail-column1">
+          <img src = "../assets/products/original-cinnamon-roll.jpg"
+            width = "600"
+            class = pd
+            alt = "Original cinnamon roll" />
+        </div>
+        <!--column 2-->
+        <div>
+        <!--grouping text and dropdown menus to add padding between price and add to cart-->
+        <!--column 2 row 1-->
+          <div class = details>
+        
+            <p class = details>
+              Customize our delicious 
+              <br>
+              hand-made cinnamon roll to 
+              <br>
+              your likeing!
+        
+            </p>
+            <!--adding drop down menu for glazing-->
+            <p class = "detail-p"><label for="glazing-select">Glazing:</label></p>
+        
+            <select name="glazing" id="glazing-select">
+              <option value="">--Please choose an option--</option>
+              <option value="Keep original">Keep original</option>
+              <option value="Sugar milk">Sugar milk</option>
+              <option value="Vanilla milk">Vanilla milk</option>
+              <option value="Double chocolate">Double chocolate</option>
+            </select>
+            <!--adding drop down menu for pack size-->
+            <p class = "detail-p"><label for="packing-select">Pack size:</label></p>
+            <select name="packing" id="packing-select">
+              <option value="">--Please choose an option--</option>
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6">6</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+          <!-- column 2 row 2-->
+          <p class = detail-b>
+            
+            $2.49
+            <!--https://blog.hubspot.com/website/html-space-->
+            &nbsp
+            &nbsp
+            <!--adding button for add to cart-->
+            <button >
+                Add to Cart
+            </button>
+          </p>
+        </div>
+      </div>
   </main>
 </body>
 </html> 
