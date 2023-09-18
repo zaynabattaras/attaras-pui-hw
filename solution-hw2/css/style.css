@@ -31,15 +31,6 @@ header{
 
 
 }
-.Header-R1-C1-5{
-    /*padding-right: 300px;
-    width: 300px;*/
-}
-.Header-R2-C2{
-    /*border-top:10px solid black;
-    transform: rotate(90deg);*/
-
-}
 /*Creating row 1 column 2 as a flexbox within column2's flex box*/
 .Header-R1-C2{
     display: flex;

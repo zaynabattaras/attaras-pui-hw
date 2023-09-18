@@ -9,19 +9,42 @@
   <body>
     <!--breaking up the page into header and main so I can create a standard header across all pages-->
     <header>
-      <!--load logo and link it to product page-->
-      <a href = index.html> 
-      <img src = "../assets/logo/logo-01.svg"
-      width=400
-      class = logo
-      alt = "bun bun logo" />
-      </a>
-      <!--use hr block to make theme change line-->
-      <hr>
-      <a href = index.html> <h2>Products</h2></a>
-      <!--create this div so I can indicate what page they are on-->
-      <div class = "page">
-      <a href = "shoppingcart.html"><h1> Cart</h1></a>
+      <!--creating a header class to use flex to rearrange my header-->
+    <div class = "Header">
+      <!--Creating div for column 1 in flex grid-->
+      <div class = "Header-C1"> 
+        <!-- for row 1 of column 1-->
+        <div class = "Header-R1-C1">
+          <!--loading logo and linking to products page-->
+          <a href = index.html> 
+            <img src = "../assets/logo/logo-01.svg"
+            width=400
+            class = logo
+            alt = "bun bun logo" />
+          </a>
+        </div>
+      </div>
+      <!-- for column 2-->
+      <div class = "Header-C2"> 
+         <!-- for column 2 row 1-->
+        <div class = "Header-R1-C2">
+           <!-- dividing row 1 column 2 into two-->
+          <div class = "Header-R1-C2-5"> 
+              <a href = index.html> <h5>Products</h5></a>
+          </div>
+          <!-- dividing row 1 column 2 into two-->
+          <div class = "Header-R1-C2-75">
+            <div class = "page">
+              <a href = "shoppingcart.html"><h1> Cart</h1></a>
+            </div>
+          </div>
+        </div>
+        <!-- div for column 2 row 2-->
+        <div > 
+          <!--use hr block to make theme change line-->
+          <hr >
+        </div>
+      </div>
     </div>
     </header>
 
