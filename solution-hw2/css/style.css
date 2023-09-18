@@ -5,7 +5,7 @@ body {
 /*creating dimensions for header and adding padding for space between it and other elements*/
 header{
     width: 1200px;
-    margin: 20px;
+    margin: 50px;
 }
 /*creating header to be a flex boc*/
 .Header{
@@ -27,8 +27,8 @@ header{
 .Header-C2{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     width: 800px;
+
 
 }
 .Header-R1-C1-5{
@@ -68,8 +68,8 @@ h1{
     font-size: 35px;
     /*https://www.w3.org/Style/Examples/007/center.en.html*/
     text-align: center;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
+    /*margin-block-start: 0.67em;
+    margin-block-end: 0.67em;*/
 }
 
 h5{
@@ -142,8 +142,6 @@ a.products{
 /*setting width for logo image*/
  img.logo{
     width: 400px;
-    padding-right: 400px;
-   
  }
  /*setting size for all product images in product gallery and adding border*/
  img.roll {
