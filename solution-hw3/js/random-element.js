@@ -17,26 +17,22 @@ let packing = {
 let selectglazing = document.querySelector("#glazing-select");
 //looping and adding glazing options
 for (const key in glazing) {
-    //how to use option construcutor for HTMLSelectElement
-    //https://www.javascripttutorial.net/javascript-dom/javascript-add-remove-options/#:~:text=JavaScript%20uses%20the%20HTMLSelectElement%20type,from%20the%20element.
-   let optionglazing =  new Option(key,glazing[key]);
-   //how to use add method for HTMLSelectElement
-   //https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/add
-   selectglazing.add(optionglazing,null);
+   var optionglazing = document.createElement('option'); 
+   optionglazing.text = key;
+   optionglazing.value = glazing[key];
+   selectglazing.add(optionglazing);
 }
 //selecting packing size drop down
 let selectpacksize = document.querySelector("#packing-select");
 // looping and adding packing size options
 for (const key in packing){
-    //how to use option construcutor for HTMLSelectElement
-    //https://www.javascripttutorial.net/javascript-dom/javascript-add-remove-options/#:~:text=JavaScript%20uses%20the%20HTMLSelectElement%20type,from%20the%20element.
-    let optionpacking = new Option(key,packing[key]);
-    //how to use add method for HTMLSelectElement
-    //https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/add
-    selectpacksize.add(optionpacking, null);
+    var optionpacking = document.createElement('option');
+    optionpacking.text = key;
+    optionpacking.value = packing[key];
+    selectpacksize.add(optionpacking);
 }
 //initializing glazing, pack size, base price variables to compute new price
-let currentGlazing= 0;
+let currentGlazing= 0.0;
 let currentPackSize = 1;
 let basePrice = 2.49;
 // creating event listeners to update packing size and glazing whenever the drop down menus are changed
@@ -45,11 +41,11 @@ selectpacksize.addEventListener("change", updatePacking);
 //selecting the current total price 
 let currentPrice = document.getElementById("totalPrice");
 // function to calculate and update the total price based off of new pack size and new glazing options
-function priceCalc () {
+function priceCalc () { 
     let tempPrice = (basePrice + currentGlazing) * currentPackSize;
     // how to round a number to nearest 100th
-    //https://stackoverflow.com/questions/14968615/rounding-to-the-nearest-hundredth-of-a-decimal-in-javascript
-    currentPrice.textContent = Math.round(tempPrice*100)/100;
+    //https://www.stechies.com/javascript-round-two-decimal-places/
+    currentPrice.textContent = tempPrice.toFixed(2); 
 }
 //function to update the glazing option based off what has been selected then using price calc update the total price based off of that choice
 function updateGlazing(event){
