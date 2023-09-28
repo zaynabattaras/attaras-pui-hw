@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Product Detail</title>
+  </head>
+
+  <body>
+    <!--breaking up the page into header and main so I can create a standard header across all pages-->
+    <header>
+      <!--creating a header class to use flex to rearrange my header-->
+    <div class = "headerC">
+      <!--Creating div for column 1 in flex grid-->
+      <div class = "header-C1"> 
+        <!-- for row 1 of column 1-->
+        <div class = "header-R1-C1">
+          <!--loading logo and linking to products page-->
+          <a href = index.html> 
+            <img src = "../assets/logo/logo-01.svg"
+            width=400
+            class = logo
+            alt = "bun bun logo" />
+          </a>
+        </div>
+      </div>
+      <!-- for column 2-->
+      <div class = "header-C2"> 
+         <!-- for column 2 row 1-->
+        <div class = "header-R1-C2">
+           <!-- dividing row 1 column 2 into two-->
+          <div class = "header-R1-C2-5"> 
+            <div class = "page">
+              <a href = index.html> <h1>Products</h1></a>
+            </div>
+          </div>
+          <!-- dividing row 1 column 2 into two-->
+          <div class = "header-R1-C2-75">
+              <a href = "shoppingcart.html"><h5> Cart</h5></a>
+          </div>
+        </div>
+        <!-- div for column 2 row 2-->
+        <div > 
+          <!--use hr block to make theme change line-->
+          <hr >
+        </div>
+        <!--column 2 row 3 of header-->
+        <div class = "page-title"> 
+          <h2 id = "product-title"> Original cinnamon roll</h2>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <main> 
+      <div class=" detail-parent">
+        <div class = "detail-column1">
+          <img id = "product-image" 
+            src = "../assets/products/original-cinnamon-roll.jpg"
+            width = "600"
+            class = pd
+            alt = "Original cinnamon roll" />
+        </div>
+        <!--column 2-->
+        <div>
+        <!--grouping text and dropdown menus to add padding between price and add to cart-->
+        <!--column 2 row 1-->
+          <div class = details>
+        
+            <p class = details>
+              Customize our delicious 
+              <br>
+              hand-made cinnamon roll to 
+              <br>
+              your likeing!
+        
+            </p>
+            <!--adding drop down menu for glazing-->
+            <p class = "detail-p"><label for="glazing-select">Glazing:</label></p>
+        
+            <select name="glazing" id="glazing-select" onchange="updateGlazing(event)">
+              <!-- elements added dynamically-->
+            </select>
+            <!--adding drop down menu for pack size-->
+            <p class = "detail-p"><label for="packing-select">Pack size:</label></p>
+            <select name="packing" id="packing-select" onchange= "updatePacking(event)">
+                    <!-- elements added dynamically-->
+            </select>
+          </div>
+          <!-- column 2 row 2-->
+          <div class = "pd-c2-r2">
+            <div> <p class = detail-b id = "totalPrice"> 2.49 </p> </div>
+            <!--adding button for add to cart-->
+            <div class = detail-b> 
+              <button id ="add-to-cart">
+                  Add to Cart
+              </button>
+           </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <script src="js/rollsdata.js"> </script>
+</body>
+</html> 
