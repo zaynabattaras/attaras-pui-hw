@@ -95,7 +95,7 @@ h3 {
 h4{
     font-size: 15px;
     font-weight: bold;
-    text-align: center;
+    text-align: start;
     text-decoration: underline;
 }
 
@@ -257,33 +257,27 @@ button{
 .sc-container1{
     width: 1200px;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
    
 }
 /*adding padding to the right of the pictures in the shopping cart */
 .sc-container1-cols{
     padding-right: 20px;
-    text-decoration: underline;
 }
 /*adding text style and dimensions for descriptions in shopping cart*/
 .sc-container1-col2-rows{
     text-align:justify;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 100px;
     width: 400px;
-    display: block;
-    font-size: 27px;
-    text-decoration: none;
-    margin: auto;
-    margin-right: 0px;
 
 }
 /*adding text stule and dimensions for prices in shopping cart*/
 .sc-container1-col3-rows{
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 20px;
     text-align: end;
     width: 100px;
     padding-top: 76px;
@@ -329,7 +323,7 @@ button{
 /*creating dimensions, width, font size, placement for all product details in shopping cart*/
 .final-details{
     display: block;
-    font-size: 27px;
+    font-size: 20px;
     text-decoration: none;
     margin: auto;
     margin-right: 0px;
@@ -351,4 +345,9 @@ hr.scl{
     text-decoration: none;
     margin: auto;
     font-weight: bold;
+}
+/* make roll class flex box for each roll entry */
+.roll{
+    display: flex;
+    flex-direction: row;
 }

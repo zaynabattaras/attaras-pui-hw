@@ -53,47 +53,36 @@
     </header>
 
     <main>
-      <div class = "sc-container1">
-        <!--container 1 col 1-->
-        <div class = "sc-container1-cols">
-          <template id = "images"> 
-            <!-- container 1, col 1, row 1-->
-            <div>
+      <div class = "sc-container1" id = "roll-list">
+        <!--container 1, creates template for roll list-->
+        <template id = "template"> 
+        <div class = "roll">
+          <div class = "sc-container1-cols">
+            <!-- container 1, col 1-->
               <img src = "../assets/products/original-cinnamon-roll.jpg"
               width=200
               class = sc
+              id = "image"
               alt = "original cinnamon roll"/>
-              <h4> Remove</h4>
-            </div>
-          </template>
-        </div>
-        <!--container 1, column 2-->
-        <div id = "c1col2">
-          <!--container 1, col 2, row 1-->
-          <template id = "productDetails"> 
-            <div class = "sc-container1-col2-rows">
+              <h4 id = "remove"> Remove</h4>
+          </div>
+          <!--container 1, column 2-->
+          <div class = "sc-container1-col2-rows">
               <!-- using p block to write text and using br to seperate each element on its own line-->
-              <p class = final-details>
+              <p class = final-details id = "details">
                   Original Cinnamon Roll
                 <br>
                 Glazing: Keep original
                 <br>
                 Pack Size: 1
               </p>
-            </div>
-        </template>
-        </div>
-        <!--container 1, column 3-->
-        <div>
-          <!--container 1, column 3, row 1-->
-          <div class = "sc-container1-col3-rows">
-            <h3 class = final-details> $ 2.49</h3>
           </div>
-          <!--container 1, column 3, row 2-->
+            <!--container 1, column 3-->
           <div class = "sc-container1-col3-rows">
-            <h3 class = final-details> $ 27.45</h3>
+              <h3 class = final-details id = "roll-price"> $ 2.49</h3>
           </div>
-        </div>
+      </div>
+      </template>
       </div>
       <div class = "sc-container2">
         <div class = "sc-container2-col1-space"></div>
@@ -112,7 +101,7 @@
         <div class = "sc-container3-col2">
           <!--container 3 col 2, row 1-->
           <div>
-            <h3 class = "final-details sc-container3-col2-row2">$ 29.94</h3>
+            <h3 class = "final-details sc-container3-col2-row2" id = "total-price">$ 29.94</h3>
           </div>
           <!--container 3 col 2, row 2-->
           <div>
@@ -124,7 +113,8 @@
         </div>
       </div>
     </main>
-    <script src="js/rollsdata.js"> </script>
+    <script src = "js/rollsdata.js"> </script>
     <script src = "js/cart.js"> </script>
   </body>
 </html> 
+
