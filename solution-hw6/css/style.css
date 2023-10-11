@@ -1,0 +1,353 @@
+/*creating standard font throughout website */
+body {
+    font-family:  Arial, Helvetica, sans-serif;
+}
+/*creating dimensions for header and adding padding for space between it and other elements*/
+header, main{
+    width: 1200px;
+    margin: 50px;
+}
+/*creating header to be a flex box*/
+.headerC{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+}
+/*setting dimensions for column1 of header*/
+.header-C1{
+    width: 400px;
+
+}
+/*setting dimensions for column1 row 1 of header*/
+.header-R1-C1{
+    width: 400px;
+
+}
+/*creating  column two as another flex box nested in header flex box*/
+.header-C2{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+
+
+}
+/*Creating row 1 column 2 as a flexbox within column2's flex box*/
+.header-R1-C2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+/*creating space between the next element*/
+.header-R1-C2-5{
+    padding-right: 75px;
+}
+/*creating space between the next element*/
+
+.header-R1-C2-75{
+    padding-right: 75px;
+}
+
+.page-title{
+    padding-top: 15px;
+    width: 800px;
+}
+/*adding default hr styling*/
+hr {
+    /*https://www.w3schools.com/howto/howto_css_style_hr.asp*/
+    border-top:5px solid black;
+
+    
+}
+/*defining h1 font size and placement*/
+h1{
+    font-size: 35px;
+    /*https://www.w3.org/Style/Examples/007/center.en.html*/
+    text-align: center;
+    /*margin-block-start: 0.67em;
+    margin-block-end: 0.67em;*/
+}
+
+h5{
+    font-size: 35px;
+    /*https://www.w3.org/Style/Examples/007/center.en.html*/
+    text-align: center;
+    font-weight: normal;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+}
+/*defining h2 font size and placement and weight*/
+h2{
+    font-size: 48px;
+    /*https://www.w3.org/Style/Examples/007/center.en.html*/
+    /*https://www.sitepoint.com/community/t/how-do-you-unbold-headers/1684/2*/
+    font-weight: normal;
+}
+/*defining h3 font size and placement and weight*/
+h3 {
+    font-size: 30px;
+    /*https://www.sitepoint.com/community/t/how-do-you-unbold-headers/1684/2*/
+    font-weight: normal;
+    text-align:start;
+
+ }
+/*defining h4 font size and placement and weight*/
+h4{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: start;
+    text-decoration: underline;
+}
+
+/*making page you are on's navigation button yellow and bold*/
+ .page{
+    font-weight: bold;
+    background-color: yellow;
+    font-weight: bold;
+    
+ }
+/*styling for product details page text*/
+ .details {
+    margin:auto;
+    display:block;
+    font-size: 20px;
+    width: 350px;
+    text-decoration:none;
+    padding-top: 30px;
+    padding-bottom: 75px;
+ }
+ /* creating dimensions for detail page flex parent*/
+ .detail-parent{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 75px;
+ }
+ /*adding paddin under column 1*/
+ .detail-column1{
+    padding-right: 75px;
+
+ }
+ /*adding special style for pargraphs in the detail page*/
+ .detail-p{
+    text-decoration: none;
+    margin: 0px;
+    font-size: 20px;
+    width: 350px;
+    padding-top: 20px;
+
+ }
+ /*standardizing links font and color and not underline them*/
+ a{
+    font-size:25px;
+    text-decoration: none;
+    color:black
+ }
+ /* creating an exception for the links with this class be underlined*/
+a.products{
+    text-decoration: underline;
+}
+/*standardizing pargraph font, width, placement*/
+ p{
+    font-size: 25px;
+    text-align: start;
+    text-decoration: underline;
+ }
+/*setting width for logo image*/
+ img.logo{
+    width: 400px;
+ }
+ /*setting size for all product images in product gallery and adding border*/
+ img.roll {
+  border: 2px solid black;
+  width: 285px;
+  height: 285px;
+
+ }
+  /*setting size for  product image in product details and adding border and setting placement*/
+ img.pd {
+    border: 2px solid black;
+    width: 600px;
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+/*setting size for  product image in shopping cart and adding border and setting placement*/
+ img.sc{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ /*creating dimensions and placement for flex parent in product gallery*/
+ .products {
+    width:1200px;
+    display: flex;
+    /*https://stackoverflow.com/questions/46986859/how-can-i-put-elements-underneath-each-other-in-flex-display*/
+    flex-direction: row;
+    align-items: flex-start ;
+    justify-content: space-around;
+    align-items: flex-start ;
+
+    
+}
+/*creating dimension and creating flex grid with in each column */
+.products-column{
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+/*creating an empty row with to create space between each product*/
+.space-row{
+    padding-bottom: 25px;
+}
+/*setting dimensions and style for each product*/
+.products-column-child{
+    width:285px;
+    text-align: start;
+}
+
+/*creating hover background, cursor, border, font weight standards for flex child in product gallery*/
+.products-column-child:hover{
+    background: yellow;
+    cursor: pointer;
+    border: 5px solid yellow;
+    border-bottom: 0px;
+    /*https://www.geeksforgeeks.org/how-to-shift-inline-elements-when-text-bold-on-hover-using-css/*/
+    font-weight: bolder;
+   
+
+}
+/*creating background, border, font size standards for all buttons*/
+button{
+    background-color:yellow;
+    border: 2px solid black;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*creating style requirements for font size, placement for add to cart and price in product details*/
+.detail-b {
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+   
+
+
+}
+/*creating dimensions for last row of column 2*/
+.pd-c2-r2{
+    width:186px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+/*creating dimension for container 1, and making it flex style*/
+.sc-container1{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+   
+}
+/*adding padding to the right of the pictures in the shopping cart */
+.sc-container1-cols{
+    padding-right: 20px;
+}
+/*adding text style and dimensions for descriptions in shopping cart*/
+.sc-container1-col2-rows{
+    text-align:justify;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    width: 400px;
+
+}
+/*adding text stule and dimensions for prices in shopping cart*/
+.sc-container1-col3-rows{
+    padding-left: 50px;
+    padding-right: 20px;
+    text-align: end;
+    width: 100px;
+    padding-top: 76px;
+    padding-bottom: 150px;
+}
+/*dimensions for containr 2 and making it into flex grid*/
+.sc-container2{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-bottom: 20px;
+}
+/*dimensions for container 2, col 1, to create horizontal space*/
+.sc-container2-col1-space{
+    width: 400px;
+}
+/*dimensions for container 2, col 2*/
+.sc-container2-col2{
+    width: 800px;
+}
+/* making container 3 into flex grid*/
+.sc-container3{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+/*creating dimensions for container 3 col 1*/
+.sc-container3-col1{
+    width: 350px;
+}
+/*creating space between container 3 and end of page*/
+.sc-container3-col2{
+    padding-right: 60px;
+}
+/*creating dimesnions and text stype for container 3 col 2, row 2*/
+.sc-container3-col2-row2{
+    width:150px;
+    text-align: end;
+    padding-bottom: 50px;
+    margin-right: 0px;
+}
+/*creating dimensions, width, font size, placement for all product details in shopping cart*/
+.final-details{
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    margin: auto;
+    margin-right: 0px;
+
+}
+
+/*creating specific style for hr to be not as wide right before the total and checkout button*/
+hr.scl{
+    border-top:4px solid black;
+    width:1000px;
+}
+/*adjusting button style to match  appropriate style of checkout button*/ 
+.checkout{
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    width:170px;
+    height: 40px;
+    text-decoration: none;
+    margin: auto;
+    font-weight: bold;
+}
+/* make roll class flex box for each roll entry */
+.roll{
+    display: flex;
+    flex-direction: row;
+}
