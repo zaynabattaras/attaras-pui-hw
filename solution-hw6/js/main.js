@@ -1,3 +1,4 @@
+
 //making a dictionary with glazing info
 let glazing = {
     "Keep original":0, 
@@ -69,8 +70,7 @@ function updatePacking(event){
     currentPackSizeP = Number(event.target.value);
     priceCalc();
 }
-// array to store rolls added to cart
-let cart = [];
+
 // getting url parameter of roll 
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
@@ -96,7 +96,7 @@ currentPrice.textContent = basePrice;
 //
 function totalPriceCalc (glazingV, packSize, basePrice) { 
     let tempPrice = (basePrice + glazing[glazingV]) * packing[packSize];
-    console.log(glazing[glazingV]);
+    //console.log(glazing[glazingV]);
     // how to round a number to nearest 100th
     //https://www.stechies.com/javascript-round-two-decimal-places/
     return tempPrice.toFixed(2); 
@@ -114,14 +114,15 @@ class Roll {
 }
 //getting add cart button element
 let addCart = document.getElementById('add-to-cart');
-
-function addToCart (){
-    
-}
+// check for cart in exisiting storage if not make empty set 
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 //function when the add to cart button is clicked creates a new roll instance for the roll displayed and pushes it to the cart array
-addCart.onclick = function(){
+addCart.onclick = function(){  
     let newRoll = new Roll(rollType, currentGlazing, currentPackSize, basePrice);
     cart.push(newRoll);
-    console.log(cart);
+    //saving cart to local storage
+    localStorage.setItem("cart", JSON.stringify(cart));
+    console.log( JSON.parse(localStorage.getItem("cart")));
+
 };
 
