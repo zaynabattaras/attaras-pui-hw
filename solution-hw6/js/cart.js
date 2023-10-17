@@ -48,12 +48,12 @@ function addingRolls(roll,i){
     cart.splice(i,1);
     roll.element.remove();
     totalPrice = totalPrice - Number(roll.rollCalcPrice);
-    //how to use abs in javascript
+     // updating display after roll removed
+    updatingPage();
+     //how to use abs in javascript
     //https://www.w3schools.com/jsref/jsref_abs.asp
     let stringfyTotalPrice = Math.abs(totalPrice).toFixed(2);
     rollsTotalPrice.innerText = "$ " +  stringfyTotalPrice;
-    // updating display after roll removed
-    updatingPage();
     //saving new cart
     localStorage.setItem("cart", JSON.stringify(cart));
     console.log(JSON.parse(localStorage.getItem("cart")));
@@ -70,6 +70,7 @@ function addingRolls(roll,i){
   }
   //adds all rolls in cart 
   function addDiplay(){ 
+    totalPrice = 0;
     for ( var i in cart) {
       let roll = cart[i];
       addingRolls(roll,i);
