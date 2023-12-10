@@ -1,7 +1,15 @@
-/*creating standard font throughout website */
-body {
-    font-family:  Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: 'Cardo';
+  src: url('fonts/Cardo-Regular.ttf') format('truetype');
+  src: url('fonts/Cardo-Bold.ttf') format('truetype');
+  src: url('fonts/Cardo-Italic.ttf') format('truetype');
+  /* Add more src declarations for different font formats like woff, woff2, etc. */
 }
+
+body {
+  font-family: Cardo,Arial, Helvetica, serif;
+}
+
 /*creating dimensions for header and adding padding for space between it and other elements*/
 header, main{
     width: 1200px;
